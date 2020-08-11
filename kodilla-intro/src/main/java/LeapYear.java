@@ -1,16 +1,11 @@
 public class LeapYear {
     public static void main(String[] args) {
-        boolean result = 1990%4 = 0;
-        System.out.println(result);
-        if (result = 0){
-            System.out.println("Rok przestępny!");
-        }else {
-            System.out.println("Rok nieprzestępny!");
+        System.out.println("Czy ten rok jest przestępny?");
+        int rok = 2013;
+        System.out.println(rok);
+        if (rok%4 ==0 && rok%100 != 0){
+            System.out.println("Tak, jest!");
         }
-        int result = 1990%4 = 0;
-        return result;
-
+        else {System.out.println("Ojej, nie jest.");}
     }
 }
-
-
