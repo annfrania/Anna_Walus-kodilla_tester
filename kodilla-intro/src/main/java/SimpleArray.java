@@ -11,8 +11,6 @@ String fruit = fruits[3];
     System.out.println(fruit);
 
     int numberOfElements = fruits.length;
-    System.out.println("Moja tablica zawiera:");
-    System.out.println(numberOfElements);
-    System.out.println("elementów.");
+    System.out.println("Moja tablica zawiera "+numberOfElements+" elementów.");
     }
 }
