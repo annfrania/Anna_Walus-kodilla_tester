@@ -3,7 +3,7 @@ public class Notebook {
     int price;
     int year;
 
-    public Notebook(String weight, int price, int year) {
+    public Notebook(String weight, int price, int year) { //konstruktor
         this.weight = weight;
         this.price = price;
         this.year = year;
