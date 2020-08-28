@@ -1,27 +1,50 @@
-public class Loops {
-    public static void main(String[] args) {
-        for (int i = 0; i <= 10; i++) {
-            System.out.println(i);
-        }
-        String[] names = new String[]{"Zygfryd", "Gwidon", "Florentyna"};
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
-        }
-        for (int i = names.length - 1; i >= 0; i--) {
-            System.out.println(names[i]);
-        }
-        int i = 0;
-        while (i <= 10) {
-            System.out.println(i);
-            i++;
-        }
+//public class Loops {
+//    public int getCountOfRandomNumber(int max) {
+//        Random random = new Random();
+//        int result = 0;
+//        int sum = 0;
+//        while (sum < max) {
+//            int temp = random.nextInt(10);
+//            sum = sum + temp;
+//            result++;
+//        }
+//        return result;
+//    }
+//}
+////    public static void main(String[] args) {
+////        for (int i = 0; i <= 10; i++) {
+////            System.out.println(i);
+////        }
+////        String[] names = new String[]{"Zygfryd", "Gwidon", "Florentyna"};
+////        for (int i = 0; i < names.length; i++) {
+////            System.out.println(names[i]);
+////        }
+////        for (int i = names.length - 1; i >= 0; i--) {
+////            System.out.println(names[i]);
+////        }
+////        int i = 0;
+////        while (i <= 10) {
+////            System.out.println(i);
+////            i++;
+////        }
+////    }
+////        public int sumNumbers(int[] numbers) {
+////        int result = 0;
+////        for (int i = 0; i < numbers.length; i++) {
+////            result = result + numbers[i];
+////        }
+////        return result;
+////    }
+////}
+////
 //
-//            int[] numbers = new int[]{5, 10, 15, 20};
-//            int result = 0;
-//            for (int x = 0; x < numbers.length; x++) {
-//                result = result + numbers[x];
-//            }
-//            return result;
-        }
-
-}
+////    public int sumUp (int[] numberss) {
+////        int[] numbers = new int[]{5,10,21};
+////        int number1 = numbers[0];
+////        int number2 = numbers[1];
+////        int number3 = numbers[2];
+////
+////        int result = number1 + number2 + number3;
+////
+////        return result;
+////    }

@@ -9,8 +9,16 @@ fruits [4] = "ananas";
 
 String fruit = fruits[3];
     System.out.println(fruit);
+String bigFruit = fruits[4];
+    System.out.println(bigFruit);
 
     int numberOfElements = fruits.length;
     System.out.println("Moja tablica zawiera "+numberOfElements+" elementów.");
+   for (int i = 0; i < 5; i++) {
+       System.out.println(fruits[i]);
+   }
+       for (int i = fruits.length - 1; i >= 0; i--) {
+           System.out.println(fruits[i]);
+       }
     }
 }

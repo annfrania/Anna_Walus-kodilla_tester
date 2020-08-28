@@ -9,5 +9,6 @@ public class CalcApplication {
 
         Calculator calculator2 = new Calculator();
         System.out.println(calculator2.counter);
+
     }
 }

@@ -6,7 +6,9 @@ public class UserUser {
         this.name = name;
         this.age = age;
     }
-
+    public String toString() {
+        return this.name + " " + this.age;
+    }
     public static void main(String[] args) {
         UserUser user1 = new UserUser("Alex", 25);
         UserUser user2 = new UserUser("Chris", 18);
@@ -15,26 +17,13 @@ public class UserUser {
         UserUser user5 = new UserUser("Ben", 40);
         System.out.println(user1.name + " " + user1.age);
 
+        UserUser[] users = {user1, user2, user3, user4, user5};
 
-
-        for (int i = 0; i < 5; i++ ) {
-            return this.age ; //???
+        for (int i = 0; i < users.length; i++ ) {
+            UserUser u = users[i];
+            System.out.println(u);
         }
+
     }
-//        int result = (user1.age+user2.age+user3.age+user4.age+user5.age)/5;
-//        System.out.println(result);
-//
-//        if (this.age < result) {
-//            System.out.println(UserUser.name);
-//        } else {
-//                return;
-//            }
-//        }
-//
-//        for (int i = 0 ; i <= 4 ; i ++ ) {
-//
-//        System.out.println(UserUser.name[i]);
-        }
-
 
 }
