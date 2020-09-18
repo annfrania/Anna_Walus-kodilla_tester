@@ -6,6 +6,7 @@ public class Application {
     public Application(String name, double age, double height) { //konstruktor
         this.name = name;
         this.age = age;
+        this.height = height;
     }
     public void checkAgeAndHeight() {
         if (this.age > 30 && this.height > 160) {

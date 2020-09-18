@@ -1,13 +1,14 @@
 public class Book {
     private String author;
     private String title;
-// bez tworzenia obiektu?
-    Book book = new Book ("George Orwell" ; "Animal Farm");
-//    String book = ("George Orwell" ; "Animal Farm");
 
-    public static String of (String author, String title) {
-        String statement = "This is" + title + "of" + author;
-        return statement;
+    public Book(String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
+
+    public static Book of (String author, String title) {
+        return new Book(author, title);
     }
     // użycie
     Book book1 = Book.of ("George Orwell", "Animal Farm");

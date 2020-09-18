@@ -13,13 +13,13 @@ public class Grades {
         this.grades[this.size] = value;
         this.size++;
     }
-    public int returngrade(int value) {
+    public int returngrade() {
         int x = this.grades[this.size - 1 ];
         System.out.println(grades [this.size - 1 ]);
         return x;
         }
-    public int average (int value){
-        int result = 0;
+    public double average (){
+        double result = 0;
         for (int i = 0; i < this.size; i++) {
             result = result + grades[i];
         }
