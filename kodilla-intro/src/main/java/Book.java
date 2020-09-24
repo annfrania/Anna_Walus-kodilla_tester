@@ -13,5 +13,4 @@ public class Book {
     // użycie
     Book book1 = Book.of ("George Orwell", "Animal Farm");
 
-
 }

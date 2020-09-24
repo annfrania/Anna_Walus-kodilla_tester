@@ -6,27 +6,20 @@ public class ColoursOfTheWind {
         P,
         G
     }
-    public String selection() {
+    public KodillaCourse selection() {
         String myColour = Colours.getLetter();
 
-//    public static String () {
-//        KodillaCourse myColour = KodillaCourse.B;
 
         switch (myColour) {
-            case B:
+            case "B":
                 System.out.println("blue");
-                break;
-            case R:
+                return KodillaCourse.B;
+            case "R":
                 System.out.println("red");
-                break;
-            case P:
-                System.out.println("pink");
-                break;
-            case G:
-                System.out.println("green");
-                break;
+                return KodillaCourse.R;
             default:
                 System.out.println("No other colours.Try again.");
+                return null;
         }
     }
 
