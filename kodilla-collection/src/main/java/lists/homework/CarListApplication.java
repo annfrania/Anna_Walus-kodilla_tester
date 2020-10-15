@@ -9,15 +9,17 @@ import java.util.List;
 public class CarListApplication {
     public static void main(String[] args) {
         List<Toyota> cars = new ArrayList<>();
-        cars.add(new Toyota(65));
+
+        Toyota toyota = new Toyota(65);
+        cars.add(toyota);
+
         cars.add(new Toyota(140));
         cars.add(new Toyota(78));
         cars.add(new Toyota(120));
 
         cars.remove(2);
-
-        Toyota toyota = new Toyota(65);
         cars.remove(toyota);
+
 
         System.out.println(cars.size());
 
