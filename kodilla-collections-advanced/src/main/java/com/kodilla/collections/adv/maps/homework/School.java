@@ -5,7 +5,6 @@ import java.util.List;
 
 public class School {
 
-
     private List<Integer> schools = new ArrayList<>();
 
     public School(int ... studentsNumber) {

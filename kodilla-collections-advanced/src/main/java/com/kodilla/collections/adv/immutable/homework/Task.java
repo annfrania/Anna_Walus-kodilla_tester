@@ -9,6 +9,14 @@ public final class Task {
         this.duration = duration;
     }
 
+    public final String getTitle() {
+        return title;
+    }
+
+    public final int getDuration() {
+        return duration;
+    }
+
     @Override
     public String toString() {
         return "Task{" +
