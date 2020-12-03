@@ -11,14 +11,11 @@ public class Warehouse {
       orderSet.add(order);
     }
     public Order getOrder(String number) throws OrderDoesntExistException{
-        Set<Order> orders = orderSet
+        return orderSet
                 .stream()
                 .filter(u -> u.getNumber().equals(number))
-                //.map(u -> u.getNumber())//?? potrzebne?
-                .collect(Collectors.toSet());
-    for (Order order : orders)
-        if (orders.contains(number))
-            return order;
-            throw new OrderDoesntExistException();
+                .findFirst()
+                .orElseThrow(()-> new OrderDoesntExistException());
+
     }
 }

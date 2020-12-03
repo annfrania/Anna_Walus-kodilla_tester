@@ -14,12 +14,9 @@ public class TaskManager {
     public static void main(String[] args) {
         List<LocalDate> lefttasks = TaskRepository.getTasks()
                 .stream()
-                .filter(t -> t.getDeadline().isBefore(getCurrentDate()))
-                .map(TaskManager :: getDeadline)
+                .filter(t -> t.getDeadline().isAfter(getCurrentDate()))
+                .map(Task :: getDeadline)
                 .collect(Collectors.toList());
         System.out.println(lefttasks);
-    }
-    public static LocalDate getDeadline (LocalDate deadline){
-        return deadline;
     }
 }

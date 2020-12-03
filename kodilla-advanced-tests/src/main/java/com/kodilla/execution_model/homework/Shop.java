@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Shop {
     List<Order> orders = new ArrayList<>();
@@ -23,12 +24,15 @@ public class Shop {
         this.orders.add(order);
     }
     public List<Order> returnListOfOrdersByDate(){
-        List<Order> orderList = new ArrayList<>();
-        for (Order order1 : orders){
-            if (order1.getDate().isAfter(LocalDate.of(2018,11,12)))
-            orderList.add(order1);
-        }
-        return orderList;
+        LocalDate twoYearsAgo = LocalDate.now().minusYears(2);
+        return orders.stream().filter(order1 -> order1.getDate().isAfter(twoYearsAgo)).collect(Collectors.toList());
+
+//        List<Order> orderList = new ArrayList<>();
+//        for (Order order1 : orders){
+//            if (order1.getDate().isAfter(LocalDate.of(2018,11,12)))
+//            orderList.add(order1);
+//        }
+//        return orderList;
     }
     public Optional<Order> getOrdersByValueMax() {
         return orders.stream().max(Comparator.comparingDouble(Order::getValue));

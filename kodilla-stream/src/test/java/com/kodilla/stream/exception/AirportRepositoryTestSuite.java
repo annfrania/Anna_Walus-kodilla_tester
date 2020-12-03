@@ -1,9 +1,10 @@
 package com.kodilla.stream.exception;
 
 import junit.framework.TestCase;
+import org.junit.Assert;
 import org.junit.Test;
 
-public class AirportRepositoryTestSuite extends TestCase {
+public class AirportRepositoryTestSuite {
     @Test
     public void testIsAirportInUse() throws AirportNotFoundException {
         //given
@@ -11,12 +12,12 @@ public class AirportRepositoryTestSuite extends TestCase {
         //when
         boolean isWarsawInUse = airportRepository.isAirportInUse("Warsaw");
         //then
-        assertTrue(isWarsawInUse);
+        Assert.assertTrue(isWarsawInUse);
     }
     @Test(expected = AirportNotFoundException.class)
     public void testIsAirportInUse_withException() throws AirportNotFoundException{
         AirportRepository airportRepository = new AirportRepository();
         boolean isWarsawInUse = airportRepository.isAirportInUse("Vienna");
-        assertFalse(isWarsawInUse);
+        Assert.assertFalse(isWarsawInUse);
     }
 }

@@ -4,9 +4,11 @@ public class ImmutableSpecialCases {
     public static void main(String[] args) {
        Integer a = 1120;
        Integer b = 1120;
+       int z = a + b;
         System.out.println(a == b);
         System.out.println(a.equals(b));
         System.out.println("----------");
+     System.out.println(z);
         String x = "This is string.";
         String y = "This is string.";
         System.out.println(x == y);
