@@ -6,8 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Optional;
-
 @SpringBootTest
 class CalculatorTestSuite {
 
@@ -15,16 +13,16 @@ class CalculatorTestSuite {
     public void shouldReturnCorrectValueWhenAdding(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         Calculator bean = context.getBean(Calculator.class);
-        Optional<Double> valueOfAdding = Optional.of(bean.add(12.2, 71.1));
-        Assertions.assertEquals(java.util.Optional.of(83.3),valueOfAdding);
+        double valueOfAdding = bean.add(12.2, 71.1);
+        Assertions.assertEquals(83.3,valueOfAdding);
     }
 
     @Test
     public void shouldReturnCorrectValueWhenSubstracting(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         Calculator bean = context.getBean(Calculator.class);
-        Optional<Double> valueOfSubstracting = Optional.of(bean.substract(12.2, 71.1));
-        Assertions.assertEquals(java.util.Optional.of(-58.89999999999999),valueOfSubstracting);
+        double valueOfSubstracting = bean.substract(12.2, 71.1);
+        Assertions.assertEquals(-58.89999999999999,valueOfSubstracting);
 
         //ale tego wyniku -58.89999999999999 to nie ogarniam ;) Pewnie jakieś niuanse javy?
     }
@@ -33,8 +31,8 @@ class CalculatorTestSuite {
     public void shouldReturnCorrectValueWhenMultiplying(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         Calculator bean = context.getBean(Calculator.class);
-        Optional<Double> valueOfMultiplying = Optional.of(bean.multiply(12, 7));
-        Assertions.assertEquals(java.util.Optional.of(84.0),valueOfMultiplying);
+        double valueOfMultiplying = bean.multiply(12, 7);
+        Assertions.assertEquals(84.0,valueOfMultiplying);
     }
 
     @Test
