@@ -4,16 +4,15 @@ import com.kodilla.rest.domain.BookDto;
 
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/books")
-class BoookController {
+class BookController {
 
     private final BookService bookService;
 
-    public BoookController(BookService bookService) {
+    public BookController(BookService bookService) {
         this.bookService = bookService;
     }
 
@@ -22,8 +21,9 @@ class BoookController {
         return bookService.getBooks();
     }
     @PostMapping                                         // [1]
-    public void addBook(@RequestBody BookDto bookDto) {  // [2]
+    public List<BookDto> addBook(@RequestBody BookDto bookDto) {  // [2]
         bookService.addBook(bookDto);
+        return null;
     }
     @DeleteMapping
     public void remove(@RequestBody BookDto bookDto) {
