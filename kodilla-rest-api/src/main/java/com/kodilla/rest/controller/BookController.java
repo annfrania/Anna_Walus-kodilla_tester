@@ -23,7 +23,7 @@ class BookController {
     @PostMapping                                         // [1]
     public List<BookDto> addBook(@RequestBody BookDto bookDto) {  // [2]
         bookService.addBook(bookDto);
-        return null;
+        return bookService.getBooks();
     }
     @DeleteMapping
     public void remove(@RequestBody BookDto bookDto) {

@@ -37,7 +37,7 @@ class BookControllerTest {
         BookController bookController = new BookController(bookServiceMock);
 
         //when
-        BookDto mockBook = new BookDto("3","3");
+        BookDto mockBook = new BookDto("title 3","author 3");
         bookController.addBook(mockBook);
 
         //then
