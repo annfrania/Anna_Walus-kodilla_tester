@@ -16,7 +16,6 @@ public class FacebookTestApp {
                 By.xpath("//+[@id=\"birthday_wrapper\"]/div/span/span/select[3]"));
 
         Select yearSelect = new Select(yearCombo);
-        yearSelect = new Select(yearCombo);
         yearSelect.selectByIndex(5);
 
     }

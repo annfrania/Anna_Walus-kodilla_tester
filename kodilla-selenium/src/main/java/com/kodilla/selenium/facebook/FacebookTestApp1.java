@@ -15,18 +15,21 @@ public class FacebookTestApp1 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com");
 
-        driver.navigate().to("https://www.facebook.com");
-        driver.switchTo().frame(0);
+//        driver.navigate().to("https://www.facebook.com");
+//        driver.switchTo().frame(0);
 
+        WebElement accept = driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]"));
+        accept.click();
 
         //kliknięcie przycisku utworzenia nowego konta
         WebElement newAccount = driver.findElement(By.xpath("//html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[5]/a"));
         newAccount.click();
+
         //zaczekanie ??
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[3]")));
 
-        WebElement yearCombo1= driver.findElement(By.xpath("//select[3]")); // [4]
+        WebElement yearCombo1= driver.findElement(By.xpath("//select[3]"));
         Select yearSelect1 = new Select(yearCombo1);
         yearSelect1.selectByIndex(5);
     }

@@ -13,8 +13,8 @@ public class AllegroTestingApp {
         WebDriver driver = new ChromeDriver();
         driver.get("https://allegro.pl/");
 
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
+//        Alert alert = driver.switchTo().alert();
+//        alert.accept();
 
         WebElement inputField = driver.findElement(By.xpath(
                 "*//form[starts-with(@class,\"mp7g_oh\")]/input")); // [4]
