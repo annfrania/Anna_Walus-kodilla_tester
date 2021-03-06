@@ -1,6 +1,7 @@
 public class UserUser {
     String name; //atrybuty klasy
     int age;
+    double average;
 
     public UserUser(String name, int age) { //konstruktor
         this.name = name;
@@ -19,8 +20,11 @@ public class UserUser {
 
         UserUser[] users = {user1, user2, user3, user4, user5};
 
-        for (int i = 0; i < users.length; i++ ) {
+      double average = (age [0]+ age [1] + age [2] + age [3] + age [4] + age[5]) /users.length;
+
+      for (int i = 0; i < users.length; i++ ) {
             UserUser u = users[i];
+            if(this.age < average)
             System.out.println(u);
         }
 
