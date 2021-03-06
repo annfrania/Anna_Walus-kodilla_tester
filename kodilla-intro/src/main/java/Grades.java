@@ -2,7 +2,7 @@ public class Grades {
     private int[] grades; //obiekty??
     private int size;
 
-    public Grades() { //konstruktor
+    public Grades() {
         this.grades = new int[10];
         this.size = 0;
     }
