@@ -3,13 +3,13 @@ public class Notebook {
     int price;
     int year;
 
-    public Notebook(String weight, int price, int year) { //konstruktor
+    public Notebook(int weight, int price, int year) { //konstruktor
         this.weight = weight;
         this.price = price;
         this.year = year;
     }
     public void checkPrice() {
-        if (this.price < 600) {
+        if () {
             System.out.println("This notebook is cheap.");
         }
         else if (this.price >= 600 && this.price <= 1000) {
@@ -20,16 +20,14 @@ public class Notebook {
         }
     }
     public void checkWeight() {
-        boolean islight = this.weight == "600g";
-        boolean isheavy = this.weight == "2000g";
-        if (islight) {
+        if (this.weight < 600)) {
             System.out.println("This notebook is light.");
         }
-        else if (isheavy) {
+        else if (this.weight >= 1700) {
             System.out.println("This notebook is heavy.");
         }
         else {
-            System.out.println("This notebook is quite heavy.");
+            System.out.println("This notebook not too heavy.");
         }
     }
     public void worthtobuy() {
