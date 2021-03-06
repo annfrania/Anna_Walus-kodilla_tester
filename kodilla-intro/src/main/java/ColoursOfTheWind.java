@@ -17,6 +17,12 @@ public class ColoursOfTheWind {
             case "R":
                 System.out.println("red");
                 return KodillaCourse.R;
+            case "P":
+                System.out.println("pink");
+                return KodillaCourse.R;
+            case "G":
+                System.out.println("green");
+                return KodillaCourse.R;
             default:
                 System.out.println("No other colours.Try again.");
                 return null;
