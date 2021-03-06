@@ -11,6 +11,6 @@ public class Book {
         return new Book(author, title);
     }
     // użycie
-    Book book1 = Book.of ("George Orwell", "Animal Farm");
+    //Book book1 = Book.of ("George Orwell", "Animal Farm");
 
 }
