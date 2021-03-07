@@ -1,5 +1,5 @@
 public class Notebook {
-    String weight; //atrybuty klasy
+    int weight; //atrybuty klasy
     int price;
     int year;
 
@@ -9,10 +9,10 @@ public class Notebook {
         this.year = year;
     }
     public void checkPrice() {
-        if () {
+        if (this.price < 600) {
             System.out.println("This notebook is cheap.");
         }
-        else if (this.price >= 600 && this.price <= 1000) {
+        else if (this.price >= 600 && this.price <= 2000) {
             System.out.println("The price is good.");
         }
         else {
@@ -20,7 +20,7 @@ public class Notebook {
         }
     }
     public void checkWeight() {
-        if (this.weight < 600)) {
+        if (this.weight < 600) {
             System.out.println("This notebook is light.");
         }
         else if (this.weight >= 1700) {
