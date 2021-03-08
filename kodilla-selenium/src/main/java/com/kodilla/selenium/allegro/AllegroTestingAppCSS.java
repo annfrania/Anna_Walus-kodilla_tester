@@ -1,6 +1,5 @@
 package com.kodilla.selenium.allegro;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,6 +34,8 @@ public class AllegroTestingAppCSS {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("article[data-analytics-view-custom-analytics-id='429c2868-7198-497a-b351-b6aa3440e691']")));
 
         List<WebElement> elements = driver.findElements(By.cssSelector("section > article"));
-        elements.get(0).getText();
-}
-}
+        String info = elements.get(0).getText();
+        System.out.println(info);
+
+        }
+    }
