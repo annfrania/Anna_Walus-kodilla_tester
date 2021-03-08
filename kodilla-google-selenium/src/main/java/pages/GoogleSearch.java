@@ -22,7 +22,7 @@ public class GoogleSearch extends AbstractPage {
         super(driver);
     }
 
-    public void searchResults {
+    public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Kodilla-projekt\\kodilla-google-selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         //WebDriverWait wait = new WebDriverWait(driver, 10);
