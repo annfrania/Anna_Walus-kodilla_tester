@@ -19,20 +19,20 @@ class ChooseACarTestSuite {
     @Test
     public void shouldCreateACarDependingOnASeason(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        //Car car = (Car) context.getBean("seasonalCar");
-        ChooseACar bean = context.getBean(ChooseACar.class);
-        Car car = bean.seasonalCar("Spring", LocalTime.of(19,15));
+        Car car = (Car) context.getBean("seasonalCar");
 
         String newCar = car.getCarType();
         System.out.println(newCar);
 
-        Assertions.assertEquals("Sedan", newCar);
+        Assertions.assertEquals("Sedan",newCar);
+        Assertion lights!
     }
     @Test
     public void shouldTellIfHeadLigthsShouldBeOn(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car bean = context.getBean(Car.class);
-        boolean lightsOn = bean.hasHeadlightsTurnedOn(LocalTime.of(13,30));
+        SeasonAndTime bean2 = context.getBean(SeasonAndTime.class);
+        boolean lightsOn = bean.hasHeadlightsTurnedOn(bean2.getTime());
         Assertions.assertTrue(lightsOn);
     }
 }

@@ -10,9 +10,10 @@ import java.time.LocalTime;
 @Component
 @Scope("prototype")
 public class Clock {
-LocalTime now = LocalTime.now();
+
 
     public Clock (){//bez argumentów
+        LocalTime now = LocalTime.now();
         System.out.println("Creating new time bean:" + now);
     }
 }
