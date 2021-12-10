@@ -1,8 +1,8 @@
 public class LeapYear {
     public static void main(String[] args) {
         System.out.println("Czy ten rok jest przestępny?");
-        int rok = 2016;
-        boolean isItLeap = rok%4 ==0 && rok%100 != 0;
+        int rok = 2200;
+        boolean isItLeap = rok%4 ==0 && rok%100 != 0 || rok%400 ==0;
         System.out.println(rok);
         if (isItLeap){
             System.out.println("Tak, jest!");

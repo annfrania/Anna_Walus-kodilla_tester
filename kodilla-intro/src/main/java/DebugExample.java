@@ -5,7 +5,7 @@ public class DebugExample {
 
         System.out.println(firstNumber);
         System.out.println(secondNumber);
-        boolean ifFirstNumber = firstNumber < 0;
+        boolean ifFirstNumber = firstNumber < 20;
         if (ifFirstNumber) {
             subtractAndDisplay(10, 15);
         } else {
@@ -13,7 +13,7 @@ public class DebugExample {
         }
     }
     private static void sumAndDisplay(int firstNumber, int secondNumber) {
-        int result = 13 + 6;
+        int result = firstNumber + secondNumber;
         System.out.println(result);
     }
 
